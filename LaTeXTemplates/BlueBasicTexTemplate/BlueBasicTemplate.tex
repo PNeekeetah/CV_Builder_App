@@ -1,0 +1,105 @@
+
+
+\documentclass[11pt,a4paper,sans]{moderncv}        
+\moderncvstyle{banking}                            
+\moderncvcolor{blue}                               
+\usepackage[utf8]{inputenc}                       
+\usepackage[scale=0.75]{geometry}
+
+\usepackage{import}
+
+\name{ {{Surname}} }{ {{Name}} }         
+\phone[mobile]{ {{Phonenumber}} }    
+\email{ {{Email}} }
+\extrainfo{ {{LinkedinURL}} }
+
+\begin{document}
+\makecvtitle
+
+\small{ {{Profile}} }
+
+\section{Previous Employment}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{\cventry{}{ {{Jobstartdate}} -- {{Jobenddate}} }{ {{Company}} }{ {{Position}} }{}{ {{Jobdescription}} }}
+
+\end{itemize}
+
+\section{Education}
+
+\vspace{5pt}
+
+\subsection{Academic Qualifications}
+
+\vspace{5pt}
+
+\begin{itemize}
+
+\item{\cventry{}{ {{Startdate}} -- {{Enddate}} }{ {{Establishment}} }{ {{Specialization}} }{}{ {{Description}}} }
+
+\end{itemize}
+
+\vspace{2pt}
+
+\subsection{Academic Projects}
+
+\vspace{12pt}
+
+\begin{itemize}
+
+\item{\textbf{ {{Project1}} } \textit{" {{Title1}} "}
+
+\vspace{3pt}
+
+\small{ {{Projectdescription1}} }}
+
+\vspace{8pt}
+
+\end{itemize}
+
+\section{Skills and Languages}
+
+\vspace{6pt}
+
+\begin{itemize}
+	
+	{% for language, language_level in languages: %}
+
+	\item \textbf{ {{language}} } {{language_level}}
+
+	\vspace{6pt}
+	
+	{%endfor%}
+
+\end{itemize}
+
+\begin{itemize}
+	
+	{% for skill, skill_level in skills : %}
+	
+	\item \textbf{ {{skill}} } {{skill_level}}
+	
+	\vspace{6pt}
+	
+	{% endfor %}
+	
+\end{itemize}
+
+
+\section{Achievements}
+
+\vspace{6pt}
+
+\begin{itemize}
+
+\item{ {{Achievement1}} }
+
+\vspace{6pt}
+
+\end{itemize}
+
+\end{document}
+
